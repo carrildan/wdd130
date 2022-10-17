@@ -5,18 +5,29 @@
 
 body {
     background-color: #FFFFFF;
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;;
 }
 
 header {
     background-color: #3d5a80;
+    font-family: "Georgia";
+    
 }
 
 .logo {
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 nav {
@@ -26,9 +37,9 @@ nav {
 
 nav a{
     text-align: center;
-   
     color: #3d5a80;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -39,20 +50,38 @@ nav a:hover {
 .home-title {
     background-color: #FFFFFF;
     color: #3d5a80;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
-h4 {
+h2 {
+    color: #3d5a80;
+    margin: 0;
+   
+}
+
+h1, h4 {
+    text-align: center;
     background-color: #FFFFFF;
     color: #3d5a80;
+
 }
 .book, .join {
     background-color: #e0fbfc;
     color: #3d5a80;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
     background-color: #ee6c4d;
+}
+
+#hero-img {
+    width: 100%;
 }
 #hero-msg h1 {
     text-align: center;
@@ -70,21 +99,37 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
     background-color: #98c1d9;
 }
 
+.rivers-card, .camping-card, rapids-card {
+    margin: 200px 0;
+} 
+
+.card-img {
+    border: 10px solid #3d5a80;
+}
+
 .msg {
-    background-color: #FFFFFF;
+    background-color: #3d5a80;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
-    color: #3d5a80;
+    color: #FFFFFF;
 }
 
 .msg p {
-    color: #3d5a80;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 
 footer {
@@ -92,9 +137,9 @@ footer {
     color: #FFFFFF;
     font-size: 1.2em;
     text-align: center;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
-
-
 
 footer a {
     color: #e0fbfc;
@@ -108,4 +153,8 @@ footer a:hover {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
