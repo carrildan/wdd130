@@ -1,0 +1,433 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #350A51;
+  --secondary-color: #F1820B;
+  --accent1-color: #F761D6;
+  --accent2-color: #FFFFFF;
+  --accent3-color: #070706;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Tahoma", sans-serif;
+  --paragraph-font: "Georgia", "Times New Roman", sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #350A51;  /* headlines on a white background */ 
+  --headline-color-on-color:  #FFFFFF; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #070706; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #350A51 ;
+  --nav-link-color: #F1820B;
+  --nav-background-color: #350A51;
+  --nav-hover-link-color: #F761D6;
+  --nav-hover-background-color: #FFFFFF;
+}
+
+body {
+  width: 100%;
+  background-color: var(--accent2-color);
+  font-size: 18px;
+  margin: 0 0;
+}
+
+h1, h2, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin: 0;
+}
+
+p {
+  color: var(--accent3-color);
+  font-family: var(--paragraph-font);
+}
+
+header {
+  height: 60px;
+  background-color: var(--primary-color);
+  margin-top: 5px;
+  margin-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/*  --------------- HOME HEADER GRID ------------*/
+#home-header-grid {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: stretch;
+    margin-bottom: 10px;
+  }
+  
+  .logo-image {
+    width: 10%;
+    grid-column: 1/2;
+    margin: -5px 0 20px 20px;
+    border-radius: 5%;
+    padding: 0;
+    position: absolute;
+  }
+  
+  nav {
+    line-height: 60px;
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav a {
+    width: 160px;
+    text-align: center;
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);/* -------------------- THE COLOR IS NOT CHANING. FIND OUT WHY---------------------*/
+  }
+  
+  .socialmediaicons {
+    grid-column: 3/4;
+    justify-self: end;
+    align-self: center;
+    margin-right: 50px;
+  
+  }
+  .facebookicon, .instagramicon {
+    width: 30px;
+    margin-right: 20px;
+  }
+
+/* --------------- HERO GRID ---------------- */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  #hero-image {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  
+  .banner-text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: var(--headline-color-on-color);
+    align-self: center;
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
+
+
+  /* --------------- HOME MAIN GRID ---------------- */
+.home-main-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    align-items: start;
+    grid-gap: 15px;
+    margin: 0 50px;
+    padding: 0;
+  }
+  
+  .home-main-grid img {
+    border: 2px solid lightgray;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border-radius: 20px;
+  }
+  
+  .home-main-grid h6 {
+    max-width: 120px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 2px lightgrey solid;
+    border-radius: 20px;
+  }
+                  /*---- CHILD1 ----*/
+  .grid-child1-smallerbanner {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    justify-self: center;
+    margin-top: 30px;
+    padding: 0;
+  }
+  
+  .newborn-img-box {
+    width: 40%;
+    align-self: center;
+  }
+  
+  #newborn-banner-image {
+    width: 90%;
+    border-radius: 20%;
+    box-shadow: 10px 5px 15px 10px var(--accent1-color);
+    float: left;
+    margin: 15px 0 15px 70px;
+  }
+  
+  .newborn-msg-box {
+    width: 40%;
+    height: 240px;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    padding: 5% 20px;
+    margin-left: 50%;
+    background-color: #F761D6;
+    box-shadow: 5px 5px 5px 5px var(--paragraph-background-color);
+    position: relative;
+  }
+  
+  .newborn-msg-box p {
+    text-align: justify;
+  }
+  
+  .newborn-banner-chatimage {
+    width: 40px;
+  }
+  
+  .line {
+    width: 118px;
+    height: 50px;
+    position: absolute;
+    top: 45%;
+    right: 100%;
+    background-color: var(--accent1-color);
+  }
+  
+                  /*---- CHILD2 ----*/
+  .grid-child2-smashthecake {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 250px;
+    margin: 0;
+  }
+  
+  .smashthecake-image {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+  }
+  
+  /* --------- MONTAR EFEITO GRADIENTE ------- 
+  .part {
+    position: absolute;
+    bottom: 100px;
+    background-color: rgb(240,213,178,0.8);
+   
+  }*/
+  
+  .title1-paragraph {
+    width: 90%;
+    position: relative;
+    bottom: 70px;
+    background-color: var(--accent2-color);
+    color: var(--paragraph-background-color);
+    opacity: 0.8;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 5px 5px;
+    text-align: justify;
+    border-radius: 2px;
+  }
+  
+                  /*---- CHILD3 ----*/
+  .grid-child3-pregnancy {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 250px;
+  }
+  
+  .pregnancy-image {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+  }
+  
+  .title2-paragraph {
+    width: 90%;
+    position: relative;
+    bottom: 70px;
+    background-color: var(--accent2-color);
+    color: var(--paragraph-background-color);
+    opacity: 0.8;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 5px 5px;
+    text-align: justify;
+    border-radius: 2px;
+  }
+  
+                  /*---- CHILD4 ----*/
+  .grid-child4-prewedding {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    height: 250px;
+  }
+  
+  .prewedding-image {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+  }
+  
+  .title3-paragraph {
+    width: 90%;
+    position: relative;
+    bottom: 70px;
+    background-color: var(--accent2-color);
+    color: var(--paragraph-background-color);
+    opacity: 0.8;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 5px 5px;
+    text-align: justify;
+    border-radius: 2px;
+  }
+  
+                  /*---- CHILD5 ----*/
+  .grid-child5-familysession {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    height: 250px;
+  }
+  
+  .familysession-image {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+  }
+  
+  .title4-paragraph {
+    width: 90%;
+    position: relative;
+    bottom: 70px;
+    background-color: var(--accent2-color);
+    color: var(--paragraph-background-color);
+    font-weight: bold;
+    opacity: 0.8;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 5px 5px;
+    text-align: justify;
+    border-radius: 2px;
+  }
+                  /*---- CHILD6 ----*/
+  .grid-child6-birthday {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    height: 250px;
+  }
+  
+  .birthday-image {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+  }
+  
+  .title5-paragraph {
+    width: 90%;
+    position: relative;
+    bottom: 70px;
+    background-color: var(--accent2-color);
+    color: var(--paragraph-background-color);
+    font-weight: bold;
+    opacity: 0.8;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 5px 5px;
+    text-align: justify;
+    border-radius: 2px;
+  }
+  
+                  /*---- CHILD7 ----*/
+  .grid-child7-professionalprofile {
+    grid-column: 5/6;
+    grid-row: 2/4;
+    height: auto;
+  }
+  
+  .professionalprofile-image {
+    width: 90%;
+    height: 490px;
+    margin: 0;
+  }
+  
+                  /*---- CHILD8 ----*/
+  .grid-child8-socialmediapics {
+    grid-column: 1/6;
+    grid-row: 4/5;
+    margin-top: 30px;
+    padding: 0 0px;
+    justify-self: center;
+    text-align: center;
+  }
+  
+  .grid-child8-socialmediapics img {
+   max-width: 327px;
+   margin: 0 10px;
+  }
+  
+  .title6{
+   text-align: center;
+  }
+  
+  .title7-paragraph {
+    color: var(--paragraph-color-on-white);
+    border: solid 3px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(white, white), linear-gradient(315deg,#833ab4,#fd1d1d 50%,#fcb045);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-align: center;
+  }
+  
+  #socialmediaspan {
+    color: var(--paragraph-background-color);
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+                  /*---- CHILD9 ----*/
+  .grid-child9-professionalprofilesesions {
+    height: 250px;
+    margin: 0;
+  }
+  
+  #promo-professional {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+  }
+  
+  .title8-paragraph {
+    width: 90%;
+    position: relative;
+    bottom: 70px;
+    background-color: var(--accent2-color);
+    color: var(--paragraph-background-color);
+    font-weight: bold;
+    opacity: 0.8;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 5px 5px;
+    text-align: justify;
+    border-radius: 2px;
+  }
