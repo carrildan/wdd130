@@ -476,6 +476,94 @@ img {
     border-radius: 2px;
   }
 
+  footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+    margin: 0;
+    
+  }
+  
+  #footer-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  
+  
+  #footer-nav lu{
+    order: 1;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-self: center;
+    line-height: 30px;
+    text-align: center;
+   
+  }
+  
+  nav a:hover{
+    background-color:var(--accent2-color);
+    color: var(--nav-link-color);
+  }
+  
+  .search-block {
+    width: 33%;
+    flex: 1;
+    order:2;
+    margin: 0;
+    text-align: center;
+  }
+  
+  input {
+    border-radius: 50px;
+    border: 1px white solid;
+    margin-top: 10px;
+    position: relative;
+    right: 10px;
+  }
+  
+  .search-block img {
+    position: relative;
+    left:150px;
+    top: 5px;
+    z-index: 1;
+  }
+  
+  .search-block p{
+    color: var(--paragraph-color-on-color);
+    font-size: 11px;
+    margin-top: 25px
+  }
+  
+  .emailchaticons {
+    width: 33%;
+    order: 3;
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+    
+  }
+  
+  .emailchaticons p {
+    color: var(--paragraph-color-on-color);
+    font-size: 11px;
+    float: right;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    text-align: center; 
+  }
+  
+  .emailicon, .chaticon  {
+    width: 40px;
+    padding: 15px 10px;
+    margin: 0 auto;
+  }
 
   /* --------------Bordered form--------------- */
 
