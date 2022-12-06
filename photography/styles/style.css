@@ -59,7 +59,7 @@ img {
 /*  --------------- HOME HEADER GRID ------------*/
 #home-header-grid {
     display: grid;
-    grid-template-columns: 15% 1fr 1fr;
+    grid-template-columns: 15% 1fr 500px 1fr;
     grid-template-rows: auto;
     justify-content: stretch;
     margin-bottom: 10px;
@@ -92,17 +92,61 @@ img {
     background-color: var(--accent2-color);
     color: var(--accent1-color);/* -------------------- THE COLOR IS NOT CHANING. FIND OUT WHY---------------------*/
   }
-  
-  .socialmediaicons {
+
+  form {
     grid-column: 3/4;
+    grid-row: 1/2;
     justify-self: end;
     align-self: center;
-    margin-right: 50px;
+    width: 450px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    text-align: center;
+  }
+
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 27%;
+    height: 40px;
+    padding: 12px 10px;
+    margin: 5px 5%;
+    display: inline;
+    float: left;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+  button {
+    height: 40px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 5px 20px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Add padding to containers */
+
+  
+  .socialmediaicons {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
   
   }
   .facebookicon, .instagramicon {
     width: 30px;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
   }
 
 /* --------------- HERO GRID ---------------- */
@@ -431,3 +475,9 @@ img {
     text-align: justify;
     border-radius: 2px;
   }
+
+
+  /* --------------Bordered form--------------- */
+
+
+
