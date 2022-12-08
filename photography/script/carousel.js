@@ -86,3 +86,34 @@ function showSlides3(n3) {
   slides3[slideIndex3-1].style.display = "block";
   dots3[slideIndex3-1].className += " active";
 }
+
+// ------------------- SLIDE 4 ------------------
+let slideIndex4 = 1;
+showSlides4(slideIndex4);
+
+// Next/previous controls
+function plusSlides4(n4) {
+  showSlides4(slideIndex4 += n4);
+}
+
+// Thumbnail image controls
+function currentSlide4(n4) {
+  showSlides4(slideIndex4 = n4);
+}
+
+function showSlides4(n4) {
+  let i;
+  let slides4 = document.getElementsByClassName("mySlides4");
+  let dots4 = document.getElementsByClassName("dot4");
+  if (n4 > slides4.length) {slideIndex4 = 1}
+  if (n4 < 1) {slideIndex4 = slides4.length}
+  for (i = 0; i < slides4.length; i++) {
+    slides4[i].style.display = "none";
+  }
+  for (i = 0; i < dots4.length; i++) {
+    dots4[i].className = dots4[i].className.replace(" active", "");
+  }
+  slides4[slideIndex4-1].style.display = "block";
+  dots4[slideIndex4-1].className += " active";
+}
+
