@@ -558,6 +558,21 @@ img {
 
   /* ------------------------------------- GALLERY PAGE ------------------------------------------- */
 
+ /*----------- GALLERY-INFORMATION-SECTION*/
+  .gallery-information {
+    width: 70%;
+    margin: 100px auto;
+    padding: 50px 100px;
+    background-color: #F1820B;
+  }
+
+  .gallery-information p {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+
   /* -------------- GALLERY-MAIN-GRID --------------- */
 
   .gallery-main-grid {
@@ -567,41 +582,35 @@ img {
     grid-gap: 50px;
     justify-content: center;
     align-content: start;
-    background-color: aliceblue;
+    background-color: rgb(246, 227, 227);
     padding: 100px;
-    border: 2px solid black;
   }
 
-  .gallery-main-grid div {  
-    border: 2px solid black;
+  .gallery-main-grid h5 {
+    margin-left: 70px;
   }
-
   .gallery-main-grid-child1 {          /* -----child1 - newborn------*/
     grid-column: 1/2;
     grid-row: 1/2;
-    background-color: #04AA6D;
     margin-bottom: 10px;
   }
 
-  #newborn2 {
-    width: 250px;
-    height: auto;
-  }
+
 
   /* Slideshow container */
-.slideshow-container, .slideshow-container2, .slideshow-container3, .slideshow-container4 {
-  max-width: 800px;
+.slideshow-container, .slideshow-container2, .slideshow-container3, .slideshow-container4, .slideshow-container5, .slideshow-container6, .slideshow-container7, .slideshow-container8 {
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
 
 /* Hide the images by default */
-.mySlides, .mySlides2, .myslides3, .mySlides4 {
+.mySlides, .mySlides2, .myslides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8 {
   display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next, .prev2, .next2, .prev3, .next3, .prev4, .next4 {
+.prev, .next, .prev2, .next2, .prev3, .next3, .prev4, .next4, .prev5, .next5, .prev6, .next6, .prev7, .next7, .prev8, .next8 {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -617,30 +626,33 @@ img {
 }
 
 /* Position the "next button" to the right */
-.next, .next2, .next3, .next4 {
+.next, .next2, .next3, .next4, .next5, .next6, .next7, .next8 {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover, .prev2:hover, .next2:hover, .prev3:hover, .next3:hover, .prev4:hover, .next4:hover {
+.prev:hover, .next:hover, .prev2:hover, .next2:hover, .prev3:hover, .next3:hover, .prev4:hover, .next4:hover, .prev5:hover, .next5:hover, .prev6:hover, .next6:hover, .prev7:hover, .next7:hover, .prev8:hover, .next8:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
   color: #f2f2f2;
+  background-color: #070706;
   font-size: 15px;
   padding: 8px 0px;
   position: absolute;
+  margin-left: 40%;
   bottom: 8px;
-  width: 99%;
+  width: 20%;
   text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
+  background-color: #070706;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -648,7 +660,7 @@ img {
 }
 
 /* The dots/bullets/indicators */
-.dot, .dot2, .dot3, .dot4 {
+.dot, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -664,7 +676,7 @@ img {
 }
 
 /* Fading animation */
-.fade, .fade2, .fade3, .fade4 {
+.fade, .fade2, .fade3, .fade4, .fade5, .fade6, .fade7 {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -678,7 +690,6 @@ img {
   .gallery-main-grid-child2 {          /* -----child2 - smash the cake------*/
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: #F1820B;
   }
 
 

@@ -117,3 +117,125 @@ function showSlides4(n4) {
   dots4[slideIndex4-1].className += " active";
 }
 
+// ------------------- SLIDE 5 ------------------
+let slideIndex5 = 1;
+showSlides5(slideIndex5);
+
+// Next/previous controls
+function plusSlides5(n5) {
+  showSlides5(slideIndex5 += n5);
+}
+
+// Thumbnail image controls
+function currentSlide5(n5) {
+  showSlides5(slideIndex5 = n5);
+}
+
+function showSlides5(n5) {
+  let i;
+  let slides5 = document.getElementsByClassName("mySlides5");
+  let dots5 = document.getElementsByClassName("dot5");
+  if (n5 > slides5.length) {slideIndex5 = 1}
+  if (n5 < 1) {slideIndex5 = slides5.length}
+  for (i = 0; i < slides5.length; i++) {
+    slides5[i].style.display = "none";
+  }
+  for (i = 0; i < dots5.length; i++) {
+    dots5[i].className = dots5[i].className.replace(" active", "");
+  }
+  slides5[slideIndex5-1].style.display = "block";
+  dots5[slideIndex5-1].className += " active";
+}
+
+
+// ------------------- SLIDE 6 ------------------
+let slideIndex6 = 1;
+showSlides6(slideIndex6);
+
+// Next/previous controls
+function plusSlides6(n6) {
+  showSlides6(slideIndex6 += n6);
+}
+
+// Thumbnail image controls
+function currentSlide6(n6) {
+  showSlides6(slideIndex6 = n6);
+}
+
+function showSlides6(n6) {
+  let i;
+  let slides6 = document.getElementsByClassName("mySlides6");
+  let dots6 = document.getElementsByClassName("dot6");
+  if (n6 > slides6.length) {slideIndex6 = 1}
+  if (n6 < 1) {slideIndex6 = slides6.length}
+  for (i = 0; i < slides6.length; i++) {
+    slides6[i].style.display = "none";
+  }
+  for (i = 0; i < dots6.length; i++) {
+    dots6[i].className = dots6[i].className.replace(" active", "");
+  }
+  slides6[slideIndex6-1].style.display = "block";
+  dots6[slideIndex6-1].className += " active";
+}
+
+
+// ------------------- SLIDE 7 ------------------
+let slideIndex7 = 1;
+showSlides7(slideIndex7);
+
+// Next/previous controls
+function plusSlides7(n7) {
+  showSlides7(slideIndex7 += n7);
+}
+
+// Thumbnail image controls
+function currentSlide7(n7) {
+  showSlides7(slideIndex7 = n7);
+}
+
+function showSlides7(n7) {
+  let i;
+  let slides7 = document.getElementsByClassName("mySlides7");
+  let dots7 = document.getElementsByClassName("dot7");
+  if (n7 > slides7.length) {slideIndex7 = 1}
+  if (n7 < 1) {slideIndex7 = slides7.length}
+  for (i = 0; i < slides7.length; i++) {
+    slides7[i].style.display = "none";
+  }
+  for (i = 0; i < dots7.length; i++) {
+    dots7[i].className = dots7[i].className.replace(" active", "");
+  }
+  slides7[slideIndex7-1].style.display = "block";
+  dots7[slideIndex7-1].className += " active";
+}
+
+
+// ------------------- SLIDE 8 ------------------
+let slideIndex8 = 1;
+showSlides8(slideIndex8);
+
+// Next/previous controls
+function plusSlides8(n8) {
+  showSlides8(slideIndex8 += n8);
+}
+
+// Thumbnail image controls
+function currentSlide8(n8) {
+  showSlides8(slideIndex8 = n8);
+}
+
+function showSlides8(n8) {
+  let i;
+  let slides8 = document.getElementsByClassName("mySlides8");
+  let dots8 = document.getElementsByClassName("dot8");
+  if (n8 > slides8.length) {slideIndex8 = 1}
+  if (n8 < 1) {slideIndex8 = slides8.length}
+  for (i = 0; i < slides8.length; i++) {
+    slides8[i].style.display = "none";
+  }
+  for (i = 0; i < dots8.length; i++) {
+    dots8[i].className = dots8[i].className.replace(" active", "");
+  }
+  slides8[slideIndex8-1].style.display = "block";
+  dots8[slideIndex8-1].className += " active";
+}
