@@ -2,14 +2,15 @@
 <html lang="en">
     <head>
         <title>Gallery</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
     </head>
 
     <body>
         <header>
-            <div>
-                <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/logo_resized.jpg?v=1648292369543" alt="logo"><!--  LOGO  -->
+            <div id="home-header-grid"> <!--HEADER GRID-->
+                <img class="logo-image" src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/logo_resized.jpg?v=1648292369543" alt="logo"><!--  LOGO  -->
                 
                 <nav> <!-- TOP NAV-->
                     <a href="index.html">Home</a>
@@ -17,20 +18,30 @@
                     <a href="contactus.html">Contact Us</a>
                 </nav>
 
-                <div> 
-                    <!--   SOCIAL MEDIA ICONS   -->
-                    <a href="https://www.flaticon.com/free-icons/internet" title="internet icons"><img src="images/facebook-logo.png"></a>
-                    <a href="https://www.flaticon.com/free-icons/internet" title="internet icons"><img src="images/instagram-logo.png"></a>
+                <form action="action_page.php" method="post">                  
+                    <div class="container">
+                      <input type="text" placeholder="Enter Username" name="uname" required>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                      <button type="submit">Login</button>
+                    </div>
+                </form>
+
+                <div class="socialmediaicons"> <!--   SOCIAL MEDIA ICONS   -->
+                    <a href="https://www.facebook.com/fotografiafariascarril" target="_blank"><img class="facebookicon" src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/rsz_facebook3.png?v=1647605453338" alt="facebook-icon"></a>
+                    <a href="https://www.instagram.com/fariascarrilfotografia/" target="_blank"><img class="instagramicon" src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/rsz_instagram.png?v=1647605461840" alt="instagram-icon"></a>
                 </div>
+
             </div>
         </header>
 
-        <div> <!--    BANNER    -->
-            <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/banner-resized.png?v=1649490326317" alt="banner">
+        <div class="hero-grid"> <!--    BANNER    -->
+            <img id="hero-image" src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/banner-resized.png?v=1649490326317" alt="banner">
+            <h1 class="banner-text">We make great moments to <br>endure for eternity</h1>  
         </div>
         
         <main>
-            <section> <!------------------INFORMATION IN BALLS-------------------->
+            <section> <!-- ----------------INFORMATION IN BALLS------------------ -->
                 <div>
                     <!--BALL 1-->
                     <p>For all options of sessions we can work In the nature, beach, city(outside) and inside a studio or your house(inside)</p>
@@ -61,92 +72,169 @@
                 </div>
             </section>
 
-            <figure> <!------------------- IMAGE GALLERY ------------------------->
-            <div>
+            <section class="gallery-main-grid"> <!------------------- GALLERY-MAIN-GRID ------------------------->
+                
                 <!-- FIRST LEFT IMAGE SLIDE SHOW-->
-                <H5>NEW BORN</H5>
-                <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/new_born_resized.jpg?v=1647630355327" alt="new born">
-                <img src="images/GalleryPage_Pic3.jpg" alt="new born">
-            </div>
+                <div class="gallery-main-grid-child1">
+                    <H5>NEW BORN</H5>
 
-            <div>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 2</div>
+                            <img id="newborn1" src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/new_born_resized.jpg?v=1647630355327" alt="new born" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+                    
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 2</div>
+                            <img  id="newborn2" src="images/rsz_gallerypage_pic3.jpg" alt="new born" style="width:100%">
+                            <div class="text">Caption Two</div>
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+  
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
+
                 <!-- FIRST RIGHT IMAGE SLIDE SHOW-->
-                <H5>SMASH THE CAKE</H5>
-                <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/smash_the_cake_resized.jpg?v=1647630393477" alt="smash the cake">
-                <img src="images/smashthecake_2.jpg" alt="smash the cake">
-            </div>
+                <div class="gallery-main-grid-child2">
+                    <H5>SMASH THE CAKE</H5>
 
-            <div>
-                <!-- SECOND LEFT IMAGE SLIDE SHOW-->
-                <H5>PREGNANCY</H5>
-                <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/pregnancy_resized.jpg?v=1647630371242" alt="pregnancy">
-                <img src="images/pregnancy.jpg" alt="pregnancy">
-            </div>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container2">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides2 fade2">
+                            <div class="numbertext">1 / 2</div>
+                            <img id="smashthecake1" src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/smash_the_cake_resized.jpg?v=1647630393477" alt="smash the cake" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+                    
+                        <div class="mySlides2 fade2">
+                            <div class="numbertext">2 / 2</div>
+                            <img  id="smashthecake2" src="images/rsz_smashthecake_2.jpg" alt="smash the cake" style="width:100%">
+                            <div class="text">Caption Two</div>
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                    <br>
+  
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot2" onclick="currentSlide2(1)"></span>
+                        <span class="dot2" onclick="currentSlide2(2)"></span>
+                    </div>
+                </div>
 
-            <div>
-                <!-- SECOND RIGHT IMAGE SLIDE SHOW-->
-                <H5>PRE WEDDING</H5>
-                <img src="images/homepage_pic4.jpg" alt="pre wedding">
-                <img src="images/homepage_pic6.jpg" alt="pre wedding">
-            </div>
+                    <!-- SECOND LEFT IMAGE SLIDE SHOW-->
+                    <div class="gallery-main-grid-child3">
+                    <H5>PREGNANCY</H5>
 
-            <div>
-                <!-- THIRD LEFT IMAGE SLIDE SHOW-->
-                <H5>FAMILY</H5>
-                <img src="images/homepage_pic7.jpg" alt="famiily session">
-                <img src="images/family_2.jpg" alt="famiily session">
-            </div>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container3">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides3 fade3">
+                            <div class="numbertext">1 / 2</div>
+                            <img id="pregnancy1" src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/pregnancy_resized.jpg?v=1647630371242" alt="pregnancy" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+                    
+                        <div class="mySlides3 fade3">
+                            <div class="numbertext">2 / 2</div>
+                            <img  id="pregnancy2" src="images/rsz_pregnancy2.jpg" alt="pregnancy" style="width:100%">
+                            <div class="text">Caption Two</div>
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev3" onclick="plusSlides3(-1)">&#10094;</a>
+                        <a class="next3" onclick="plusSlides3(1)">&#10095;</a>
+                    </div>
+                    <br>
+  
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot3" onclick="currentSlide3(1)"></span>
+                        <span class="dot3" onclick="currentSlide3(2)"></span>
+                    </div>
+                </div>
 
-            <div>
-                <!-- THIRD RIGHT IMAGE SLIDE SHOW-->
-                <H5>BIRTHDAY</H5>
-                <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/birthday_resized.jpg?v=1647630317410" alt="birthday">
-                <img src="images/birthday2.jpg" alt="birthday">
-            </div>
+                
 
-            <div>
-                <!-- LAST LEFT IMAGE SLIDE SHOW-->
-                <H5>PROFESSIONAL PROFILE</H5>
-                <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/professional_profile_resized.jpg?v=1647630380590" alt="professinal profile">
-                <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/rsz_2foto_profisonal.jpg?v=1659821122700" alt="professinal profile">
-            </div>
+                <div class="gallery-main-grid-child4">
+                    <!-- SECOND RIGHT IMAGE SLIDE SHOW-->
+                    <H5>PRE WEDDING</H5>
+                    <img src="images/pre_wedding_resized.jpg" alt="pre wedding">
+                    <img src="images/homepage_pic6.jpg" alt="pre wedding">
+                </div>
 
-            <div>
-                <!-- LAST RIGHT IMAGE SLIDE SHOW-->
-                <H5>YOUR SOCIAL MEDIA PICS</H5>
-                <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/social_media_pic_resized.jpg?v=1647630401028" alt="socialmedia">
-                <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/maria_resized.jpg?v=1648282398253" alt="socialmedia">
-            </div>
+                <div class="gallery-main-grid-child5">
+                    <!-- THIRD LEFT IMAGE SLIDE SHOW-->
+                    <H5>FAMILY</H5>
+                    <img src="images/rsz_family.jpg" alt="famiily session">
+                    <img src="images/rsz_1family_2.jpg" alt="famiily session">
+                </div>
+
+                <div class="gallery-main-grid-child6">
+                    <!-- THIRD RIGHT IMAGE SLIDE SHOW-->
+                    <H5>BIRTHDAY</H5>
+                    <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/birthday_resized.jpg?v=1647630317410" alt="birthday">
+                    <img src="images/rsz_birthday2.jpg" alt="birthday">
+                </div>
+
+                <div class="gallery-main-grid-child7">
+                    <!-- LAST LEFT IMAGE SLIDE SHOW-->
+                    <H5>PROFESSIONAL PROFILE</H5>
+                    <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/professional_profile_resized.jpg?v=1647630380590" alt="professinal profile">
+                    <img src="images/professional.jpg" alt="professinal profile">
+                </div>
+
+                <div class="gallery-main-grid-child8">
+                    <!-- LAST RIGHT IMAGE SLIDE SHOW-->
+                    <H5>YOUR SOCIAL MEDIA PICS</H5>
+                    <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/social_media_pic_resized.jpg?v=1647630401028" alt="socialmedia">
+                    <img src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/maria_resized.jpg?v=1648282398253" alt="socialmedia">
+                </div>
+            </section>
         </main>
         
-        <footer> <!-------------------- FOOTER ------------------->
-            <div>
-                <nav>
+        <footer>
+            <div id="footer-box">
+                <!--<div class="footer-promo">
+                    <h3>25% OFF</h3>
+                    <h6 id="footer-box-text">Ask for a budget and get a great discount!</h6>
+                </div>-->
+
+                <nav id="footer-nav">
                     <a href="index.html">Home</a>
                     <a href="gallery.html">Gallery</a>
                     <a href="contactus.html">Contact</a>
-                    <a href="site-plan.html">Site Plan</a>
                 </nav>
         
-                <div>
-                    <!-- SEARCH BAR / COPYRIGHT-->
-                    <input>
-                    &copy; 2022 - Daniel Carril
+                <div class="search-block">
+                    <img class="searchimage" src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/9385963701556258272-16.png?v=1650523566208" alt="search image">
+                    <input type="text" value=""  placeholder="  Search" onchange="openPage()">  
+                    <p class="copyright">&copy; 2022 Farias Carril Fotografias</p>
                 </div>
 
-                <div>
-                    <!--ICONS-->
-                    <a href="https://www.flaticon.com/free-icons/whatsapp" title="email icons"><img src="images/whatsapp.png" alt="whatsapp icon"></a>
-                    <a href="https://www.flaticon.com/free-icons/email" title="email icons"><img src="images/email.png" alt="email icon"></a>
-
-
+                <div class="emailchaticons">
+                    <a href="mailto:zangelasf@hotmail.com"><img class="emailicon" src="https://cdn.glitch.global/4dc88303-8015-467f-9334-2e63fdb63c75/emailicon%C3%A7.png?v=1650468885236" alt="email icon"></a>
+                    <a href="https://wa.me/message/TFYCRM6ORCPMC1" target="_blank"><img class="chaticon" src="https://cdn.glitch.global/00580c93-95a5-4996-8593-3f4dcad45839/13033639581530103328-128.png?v=1649498092396" alt="chat icon"></a>
+                    <p>Call us: +34 657 74 3735 (Spain)</p>
                 </div>
             </div>  
-
-            <div>
-                <!-- PROMO ---->
-                <h2>PROMO</h2>
-            </div>
         </footer>   
     </body>
+    <script src="script/carousel.js"></script>
 </html>
