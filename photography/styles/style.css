@@ -507,7 +507,7 @@ img {
     text-align: center;
   }
   
-  input {
+  footer input {
     border-radius: 50px;
     border: 1px white solid;
     margin-top: 10px;
@@ -773,6 +773,7 @@ img {
   main input, textarea {
     border: 2px solid;
     border-radius: 0ch;
+    margin: 0;
   }
 
    /*------ CHILD 4 ---------*/
